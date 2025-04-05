@@ -1,4 +1,4 @@
-from core.FaceWareHouseModel import FaceWarehouseReconModel
+from core.Face.FaceWareHouseModel import FaceWarehouseReconModel
 from scipy.io import loadmat
 import torch
 import struct

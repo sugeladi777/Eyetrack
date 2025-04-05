@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/EyeballFitter", // 可执行文件路径
+            "args": [], // 如果需要传递命令行参数，可以在这里添加
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // 工作目录
+            "environment": [],
+            "externalConsole": false, // 是否使用外部终端
+            "MIMode": "gdb", // 使用 gdb 调试器
+            "setupCommands": [
+                {
+                    "description": "启用 gdb 的 pretty-printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build" // 在调试前运行的任务（需在 tasks.json 中定义）
+        }
+    ]
+}
