@@ -1,14 +1,14 @@
 from facenet_pytorch import MTCNN
-from core.options import ImageFittingOptions
+from core.Face.options import ImageFittingOptions
 import cv2
 import face_alignment
 import numpy as np
 from core import get_recon_model
 import os
 import torch
-import core.utils as utils
+import core.Face.utils as utils
 from tqdm import tqdm
-import core.losses as losses
+import core.Face.losses as losses
 
 
 def fit(args):

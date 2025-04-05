@@ -1,0 +1,9 @@
+numpy>=1.22.0
+opencv-python>=4.2.0
+albumentations==1.1.0
+scikit-learn>=1.0.0
+tqdm
+matplotlib
+tensorboard
+onnx==1.16.1
+onnxruntime-gpu==1.16.1
